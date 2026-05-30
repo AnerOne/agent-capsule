@@ -29,8 +29,16 @@
     "typescript",
     "agentic-coding"
   ],
-  "author": "",
+  "author": "Dawid Górski",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnerOne/agent-capsule.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AnerOne/agent-capsule/issues"
+  },
+  "homepage": "https://github.com/AnerOne/agent-capsule#readme",
   "engines": {
     "node": ">=20"
   },
