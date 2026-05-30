@@ -1,0 +1,20 @@
+export declare const CAPSULE_DIR = ".capsules";
+export declare function slugify(input: string): string;
+export declare function ensureDir(dir: string): void;
+export declare function readText(file: string): string;
+export declare function writeText(file: string, content: string): void;
+export declare function pathExists(file: string): boolean;
+export declare function isDirectory(file: string): boolean;
+export declare function listMarkdownFiles(dir: string): string[];
+export declare function runGit(args: string[], cwd?: string): string;
+export declare function hasGitRepo(cwd?: string): boolean;
+export declare function getChangedFiles(cwd?: string): string[];
+export declare function runShell(command: string, cwd?: string): {
+    passed: boolean;
+    output: string;
+};
+export declare function matchesAny(file: string, patterns: string[]): boolean;
+export declare function matchPattern(file: string, pattern: string): boolean;
+export declare function normalizePath(value: string): string;
+export declare function testFileChanged(files: string[]): boolean;
+export declare function formatList(items: string[], empty?: string): string;

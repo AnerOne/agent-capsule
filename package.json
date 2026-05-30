@@ -1,0 +1,41 @@
+{
+  "name": "agent-capsule",
+  "version": "0.1.0",
+  "description": "Task capsules for AI coding agents. Keep Codex, Claude Code and Cursor inside scope.",
+  "type": "module",
+  "bin": {
+    "agent-capsule": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "ai-agents",
+    "codex",
+    "claude-code",
+    "cursor",
+    "cli",
+    "developer-tools",
+    "git",
+    "code-review",
+    "typescript",
+    "agentic-coding"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.8.3"
+  }
+}
